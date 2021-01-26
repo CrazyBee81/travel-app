@@ -2,7 +2,7 @@
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth() + '.' + d.getDate() + '.' + d.getFullYear();
+let newDate = d.getDate() + '.' + d.getMonth() + 1  + '.' + d.getFullYear();
 
 const apiKey = '2ab26a436d58499cf7890d34e58ba3dd';
 const baseURL = 'http://api.openweathermap.org/data/2.5/weather?q=';
@@ -46,21 +46,23 @@ const postData = async (url = '', data = {}) => {
 
     try {
         const newData = await response.json();
+        console.log(newData)
         return newData;
     } catch (error) {
         console.log("error", error);
     }
 };
 
+// updateUI
 const updateUI = async () => {
-    const request = await fetch('/all');
-    try{
-        const allData = await request.json();
-        console.log(allData);
-        document.getElementById('temp').innerHTML = allData.temp;
-        document.getElementById('date').innerHTML = allData.date;
-        document.getElementById('content').innerHTML = allData.feelings;
-    }catch(error){
+    const response = await fetch('/all');
+    try {
+        const newData = await response.json();
+        console.log(newData);
+        document.getElementById('temp').innerHTML = (newData.temp-273.15).toFixed(2) + '°C';
+        document.getElementById('date').innerHTML = newData.date;
+        document.getElementById('content').innerHTML = newData.feelings;
+    } catch (error) {
         console.log("error", error);
     }
 }
