@@ -29,7 +29,6 @@ const listening = function(){
 const server = app.listen(port, listening);
 
 // POST route
-let data = [];
 
 app.post('/add', addWeatherData);
 
@@ -41,11 +40,11 @@ function addWeatherData(req,res){
         feelings: req.body.feelings
     }
 
-    data.push(newEntry)
-    console.log(data)
+    projectData[Object.keys(projectData).length] = newEntry;
+    console.log(newEntry)
 }
 
 // GET route
 app.get('/all', function (req, res) {
-    res.send(data[0])
+    res.send(projectData[0])
 })
