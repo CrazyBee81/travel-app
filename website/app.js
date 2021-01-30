@@ -67,8 +67,6 @@ const updateUI = async () => {
     }
 }
 
-const baseURL = 'http://api.openweathermap.org/data/2.5/weather?q=';
-
 document.getElementById('generate').addEventListener('click', performAction);
 
 function performAction(e) {
@@ -81,50 +79,3 @@ function performAction(e) {
 
 }
 
-// Async Get
-const getWeather = async (baseURL, zipCode, key) => {
-    const res = await fetch(baseURL + zipCode + ',de' + '&appid=' + key)
-    try {
-
-        const data = await res.json();
-        console.log(data)
-        return data;
-    } catch (error) {
-        console.log("error", error);
-        // appropriately handle the error
-    }
-}
-
-// Async POST
-const postData = async (url = '', data = {}) => {
-    const response = await fetch(url, {
-        method: 'POST',
-        credentials: 'same-origin',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data), // body data type must match "Content-Type" header
-    });
-
-    try {
-        const newData = await response.json();
-        console.log(newData)
-        return newData;
-    } catch (error) {
-        console.log("error", error);
-    }
-};
-
-// updateUI
-const updateUI = async () => {
-    const response = await fetch('/all');
-    try {
-        const newData = await response.json();
-        console.log(newData);
-        document.getElementById('temp').innerHTML = (newData.temp-273.15).toFixed(2) + '°C';
-        document.getElementById('date').innerHTML = newData.date;
-        document.getElementById('content').innerHTML = newData.feelings;
-    } catch (error) {
-        console.log("error", error);
-    }
-}
