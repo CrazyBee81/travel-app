@@ -21,10 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="2495c9c9-430a-4105-a04f-d95dcc50dc8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commentsOnlyJS/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commentsOnlyJS/server.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +37,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,6 +58,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/client/js" />
+      <recent name="$PROJECT_DIR$/src/client" />
+      <recent name="$PROJECT_DIR$/commentsOnlyJS" />
+      <recent name="$PROJECT_DIR$/src/client/styles" />
+      <recent name="$PROJECT_DIR$/src/client/views" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -62,7 +84,23 @@
       <workItem from="1611822402948" duration="7351000" />
       <workItem from="1611906018301" duration="2292000" />
       <workItem from="1612017928786" duration="1316000" />
-      <workItem from="1612172494595" duration="4315000" />
+      <workItem from="1612172494595" duration="4917000" />
+      <workItem from="1615989519551" duration="5507000" />
+      <workItem from="1616257013060" duration="2936000" />
+      <workItem from="1616260724243" duration="715000" />
+      <workItem from="1616314735104" duration="42000" />
+      <workItem from="1616931290855" duration="4842000" />
+      <workItem from="1616938394987" duration="2968000" />
+      <workItem from="1618132305081" duration="56000" />
+      <workItem from="1618132395061" duration="1187000" />
+      <workItem from="1618137746580" duration="3964000" />
+      <workItem from="1618739036583" duration="16000" />
+      <workItem from="1618739148894" duration="1225000" />
+      <workItem from="1618741004211" duration="630000" />
+      <workItem from="1618839404273" duration="6000" />
+      <workItem from="1619944839622" duration="9000" />
+      <workItem from="1620306401558" duration="198000" />
+      <workItem from="1620306897743" duration="887000" />
     </task>
     <servers />
   </component>
@@ -82,9 +120,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="797" y="462" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611906898247">
-      <screen x="0" y="23" width="1920" height="989" />
+    <state x="1031" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1620305993716">
+      <screen x="0" y="23" width="1920" height="986" />
     </state>
+    <state x="1031" y="270" key="#com.intellij.fileTypes.FileTypeChooser/-1440.23.1440.877/0.23.1920.986@0.23.1920.986" timestamp="1620305993716" />
+    <state x="1184" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1620304547894">
+      <screen x="0" y="23" width="1920" height="986" />
+    </state>
+    <state x="1184" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.23.1440.877/0.23.1920.986@0.23.1920.986" timestamp="1620304547894" />
+    <state x="496" y="160" key="SettingsEditor" timestamp="1620306971773">
+      <screen x="0" y="23" width="1920" height="986" />
+    </state>
+    <state x="496" y="160" key="SettingsEditor/-1440.23.1440.877/0.23.1920.986@0.23.1920.986" timestamp="1620306971773" />
+    <state x="797" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620307022276">
+      <screen x="0" y="23" width="1920" height="986" />
+    </state>
+    <state x="797" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1440.23.1440.877/0.23.1920.986@0.23.1920.986" timestamp="1620307022276" />
     <state x="797" y="462" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.23.1440.877/0.23.1920.989@0.23.1920.989" timestamp="1611906898247" />
     <state x="2518" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.23.1440.877/0.23.1920.989@1920.23.1440.877" timestamp="1611851475185" />
   </component>
