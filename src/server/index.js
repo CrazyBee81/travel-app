@@ -1,7 +1,7 @@
 // Setup empty JS object to act as endpoint for all routes
 const projectData = {};
 
-// Require Express to run server and routes
+// Require Express to run index and routes
 const express = require('express');
 // Start up an instance of app
 const app = express();
@@ -12,6 +12,8 @@ const bodyParser = require('body-parser');
 const cors = require("cors");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+const dotenv = require('dotenv');
+dotenv.config();
 
 // Cors for cross origin allowance
 app.use(cors());
@@ -20,13 +22,13 @@ app.use(cors());
 app.use(express.static('dist'))
 
 // Setup Server
-const port = 8000;
+const port = 8081;
 
 const listening = function(){
     console.log(`server is running on port ${port}`);
 }
 
-const server = app.listen(port, listening);
+const index = app.listen(port, listening);
 
 // POST route
 
@@ -47,4 +49,10 @@ function addWeatherData(req,res){
 // GET route
 app.get('/all', function (req, res) {
     res.send(projectData[0])
+})
+
+
+// GET route
+app.get('/key', function (req, res) {
+    res.json(process.env.userName)
 })
