@@ -20,63 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2495c9c9-430a-4105-a04f-d95dcc50dc8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/media/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/media/panorama.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/styles/footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/styles/header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/styles/planner.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/styles/sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/views/index_old.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/__test__/requestAPI.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/__test__/storeSearch.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/js/performAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/js/requestAPI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/js/storeSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/js/updateCards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/js/updateSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/styles/banner.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/styles/cards.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/UPGRADE_GUIDE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/adapters/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/adapters/http.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/adapters/xhr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/axios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/cancel/Cancel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/cancel/CancelToken.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/cancel/isCancel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/Axios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/InterceptorManager.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/buildFullPath.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/createError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/dispatchRequest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/enhanceError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/mergeConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/settle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/transformData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/defaults.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/bind.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/buildURL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/combineURLs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/cookies.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/deprecatedMethod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isAbsoluteURL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isAxiosError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isURLSameOrigin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/normalizeHeaderName.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/parseHeaders.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/spread.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/axios/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/js/weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/weather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/js/weather.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/styles/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/styles/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/styles/planner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/styles/sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/styles/style.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/views/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.dev.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.prod.js" afterDir="false" />
     </list>
@@ -91,9 +56,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Sass File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -117,14 +82,14 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/client/views" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/client/js" />
       <recent name="$PROJECT_DIR$/src/client" />
+      <recent name="$PROJECT_DIR$/src/client/js" />
       <recent name="$PROJECT_DIR$/commentsOnlyJS" />
       <recent name="$PROJECT_DIR$/src/client/styles" />
+      <recent name="$PROJECT_DIR$/src/client/views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/client/views" />
     </key>
   </component>
@@ -159,7 +124,18 @@
       <workItem from="1619944839622" duration="9000" />
       <workItem from="1620306401558" duration="198000" />
       <workItem from="1620306897743" duration="6363000" />
-      <workItem from="1620376109752" duration="3550000" />
+      <workItem from="1620376109752" duration="22874000" />
+      <workItem from="1620463611283" duration="18685000" />
+      <workItem from="1620504724142" duration="2781000" />
+      <workItem from="1620546299673" duration="19810000" />
+      <workItem from="1621864607538" duration="14398000" />
+      <workItem from="1621935626968" duration="17748000" />
+      <workItem from="1622016483556" duration="18644000" />
+      <workItem from="1622100558962" duration="19168000" />
+      <workItem from="1622226178232" duration="491000" />
+      <workItem from="1622397949204" duration="16801000" />
+      <workItem from="1622548237040" duration="57000" />
+      <workItem from="1622549677452" duration="2795000" />
     </task>
     <servers />
   </component>
@@ -183,10 +159,12 @@
       <screen x="0" y="23" width="1920" height="986" />
     </state>
     <state x="1031" y="270" key="#com.intellij.fileTypes.FileTypeChooser/-1440.23.1440.877/0.23.1920.986@0.23.1920.986" timestamp="1620305993716" />
-    <state x="1184" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1620304547894">
+    <state x="729" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1621871655233">
       <screen x="0" y="23" width="1920" height="986" />
     </state>
-    <state x="1184" y="483" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.23.1440.877/0.23.1920.986@0.23.1920.986" timestamp="1620304547894" />
+    <state x="729" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.23.1440.877/0.23.1920.986@0.23.1920.986" timestamp="1621871655233" />
+    <state x="1184" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.23.1440.877/0.23.1920.988@0.23.1920.988" timestamp="1620382569378" />
+    <state x="1184" y="487" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.23.1440.877/0.23.1920.994@0.23.1920.994" timestamp="1620400128224" />
     <state x="496" y="160" key="SettingsEditor" timestamp="1620306971773">
       <screen x="0" y="23" width="1920" height="986" />
     </state>
@@ -195,7 +173,9 @@
       <screen x="0" y="23" width="1920" height="986" />
     </state>
     <state x="797" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1440.23.1440.877/0.23.1920.986@0.23.1920.986" timestamp="1620307022276" />
-    <state x="797" y="462" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.23.1440.877/0.23.1920.989@0.23.1920.989" timestamp="1611906898247" />
-    <state x="2518" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.23.1440.877/0.23.1920.989@1920.23.1440.877" timestamp="1611851475185" />
+    <state x="885" y="332" width="670" height="676" key="search.everywhere.popup" timestamp="1620416093717">
+      <screen x="0" y="23" width="1920" height="992" />
+    </state>
+    <state x="885" y="332" width="670" height="676" key="search.everywhere.popup/-1440.23.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1620416093717" />
   </component>
 </project>

@@ -1,0 +1,161 @@
+/* ------------------------- */
+/* General Settings */
+/* ------------------------- */
+
+body {
+  font: normal 16px 'Poppins', sans-serif;
+  line-height: 20px;
+  margin: 0
+}
+
+.small-paragraph {
+  font-size: 0.75rem;
+}
+
+h1 {
+  font-size: 90px;
+  line-height: 108px;
+  color: white;
+  margin: 20px 20px;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 45px;
+    line-height: 54px;
+  }
+}
+
+h2 {
+  margin: 20px 10px 0px;
+  color: white;
+}
+
+h3 {
+  margin: 20px 10px 0px;
+  color: black;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: dimgray;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.active {
+  display: block
+}
+
+.inactive {
+  display: none
+}
+
+/* ------------------------- */
+/* Page Structure */
+/* ------------------------- */
+
+
+.page_wrapper {
+  /* Step 1: Set display to grid */
+  display: grid;
+  /* Step 2: setup rows amd columns */
+  grid-template-columns: 492px;
+  grid-template-rows: 120px 680px 1fr 200px;
+  grid-template-areas: "hd" "banner" "content" "ft";
+  border: 2px solid white;
+}
+
+@media screen and (min-width: 768px) {
+  .page_wrapper {
+    /* Step 1: Set display to grid */
+    display: grid;
+    /* Step 2: setup rows amd columns */
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 1fr 1fr 200px;
+    grid-template-areas: "hd" "banner" "content" "ft";
+    border: 2px solid white;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .page_wrapper {
+    /* Step 1: Set display to grid */
+    display: grid;
+    /* Step 2: setup rows amd columns */
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 760px 1fr 200px;
+    grid-template-areas: "hd" "banner" "content" "ft";
+    border: 2px solid white;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .page_wrapper {
+    /* Step 1: Set display to grid */
+    display: grid;
+    /* Step 2: setup rows amd columns */
+    grid-template-columns: 320px 320px 320px 320px 320px 320px;
+    grid-template-rows: 120px 120px 1fr 200px;
+    grid-template-areas: "hd" "content" "ft";
+    border: 2px solid white;
+  }
+}
+
+header {
+  grid-area: hd;
+  width: 100vw;
+  display: flex;
+}
+
+#bg-banner {
+  grid-area: banner;
+}
+
+main {
+  grid-area: content;
+}
+
+footer {
+  grid-area: ft;
+}
+
+/* ------------------------- */
+/* Section */
+/* ------------------------- */
+.titlepage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 20px;
+  width: 1280px
+}
+
+@media screen and (max-width: 767px) {
+  .titlepage h3::before,
+  .titlepage h3::after {
+    width: 50px !important;
+  }
+}
+
+.titlepage h3::before,
+.titlepage h3::after {
+  content: "";
+  height: 5px;
+  border-top: 1px solid rgba(181, 192, 213, 255);
+  top: 27px;
+  width: 149px;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+#my_trips {
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+}

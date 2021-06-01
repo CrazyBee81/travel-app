@@ -1,21 +1,26 @@
-import {performAction} from "./js/weather"
-import {getData} from "./js/weather"
-import {postData} from "./js/weather"
-import {updateUI} from "./js/weather"
+import {performSearch} from "./js/performAction"
+import {safeSearch} from "./js/performAction"
+import {openDropdown} from "./js/updateSearch"
+import {showSearchResults} from "./js/updateSearch"
+import {calculateCountdown} from "./js/updateSearch"
+import {clearSearchResults} from "./js/updateSearch"
+import {selectImage} from "./js/updateSearch"
+import {loadSearchResults} from "./js/storeSearch"
+import {storeSearchResults} from "./js/storeSearch"
+import {postData} from "./js/requestAPI"
+import {getCardData} from "./js/updateCards"
+import {createCards} from "./js/updateCards"
+import {getAPIData} from "./js/requestAPI"
 
-alert("hello world")
-
-import './styles/style.scss'
+import './styles/banner.scss'
+import './styles/cards.scss'
 import './styles/footer.scss'
 import './styles/header.scss'
-import './styles/planner.scss'
-import './styles/sidebar.scss'
-
-
+import './styles/main.scss'
 
 export {
-    performAction,
-    getData,
+    performSearch,
+    getAPIData,
     postData,
-    updateUI
+    showSearchResults, openDropdown, clearSearchResults, selectImage, safeSearch, getCardData, createCards, calculateCountdown, storeSearchResults, loadSearchResults
 }

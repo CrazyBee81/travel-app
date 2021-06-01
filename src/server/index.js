@@ -1,5 +1,5 @@
 // Setup empty JS object to act as endpoint for all routes
-const projectData = {};
+let projectData = [];
 
 // Require Express to run index and routes
 const express = require('express');
@@ -10,7 +10,7 @@ const app = express();
 //Here we are configuring express to use body-parser as middle-ware.
 const bodyParser = require('body-parser');
 const cors = require("cors");
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 const dotenv = require('dotenv');
 dotenv.config();
@@ -24,7 +24,7 @@ app.use(express.static('dist'))
 // Setup Server
 const port = 8081;
 
-const listening = function(){
+const listening = function () {
     console.log(`server is running on port ${port}`);
 }
 
@@ -32,27 +32,36 @@ const index = app.listen(port, listening);
 
 // POST route
 
-app.post('/add', addWeatherData);
+app.post('/add', addData);
 
-function addWeatherData(req,res){
-
-    let newEntry = {
-        temp: req.body.data.temp,
-        date: req.body.data.date,
-        feelings: req.body.data.feelings
-    }
-    projectData[Object.keys(projectData).length] = newEntry;
-    console.log(req.body)
-    res.send(projectData[0])
+function addData(req, res) {
+    let newPost = req.body
+    projectData[Object.keys(projectData).length] = newPost
+    res.send(projectData[Object.keys(projectData).length - 1])
 }
 
 // GET route
 app.get('/all', function (req, res) {
-    res.send(projectData[0])
+    res.json(projectData)
 })
 
 
-// GET route
-app.get('/key', function (req, res) {
-    res.json(process.env.userName)
+// POST route
+app.post('/key', function (req, res) {
+    let api = req.body.key
+    let key = ""
+    switch (api) {
+        case 'weatherbit':
+            key = process.env.weatherbit_key
+            break;
+        case 'pixabay':
+            key = process.env.pixabay_key
+            break;
+        case 'geonames':
+            key = process.env.geoname_user
+            break;
+        default:
+            console.log(`key ${api} not found`);
+    }
+    res.json(key)
 })

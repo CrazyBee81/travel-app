@@ -21,15 +21,19 @@ module.exports = {
                 loader: "babel-loader"
             },
             {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader'
+            },
+            {
                 test: /\.scss$/,
                 use: [ 'style-loader', 'css-loader', 'sass-loader' ]
-            }
+            },
         ]
     },
     plugins: [
         new HtmlWebPackPlugin({
             template: "./src/client/views/index.html",
-            filename: "./index_old.html",
+            filename: "./index.html",
         }),
         new CleanWebpackPlugin({
             // Simulate the removal of files

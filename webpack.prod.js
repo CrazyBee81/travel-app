@@ -23,16 +23,19 @@ module.exports = {
                 loader: "babel-loader"
             },
             {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader'
+            },
+            {
                 test: /\.scss$/,
                 use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
-            },
-
+            }
         ]
     },
     plugins: [
         new HtmlWebPackPlugin({
             template: "./src/client/views/index.html",
-            filename: "./index_old.html",
+            filename: "./index.html",
         }),
         new MiniCssExtractPlugin({
             filename: "[name].css"
