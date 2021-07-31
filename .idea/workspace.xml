@@ -20,30 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2495c9c9-430a-4105-a04f-d95dcc50dc8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/client/__test__/requestAPI.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/__test__/storeSearch.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/js/performAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/js/requestAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/js/storeSearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/js/updateCards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/js/updateSearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/styles/banner.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/styles/cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/js/createPacklist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/js/weather.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/js/performAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/performAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/js/requestAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/requestAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/js/storeSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/storeSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/js/updateCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/updateCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/js/updateSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/updateSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/styles/banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/banner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/styles/cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/cards.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/styles/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/styles/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/styles/planner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/styles/sidebar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/styles/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/views/index_old.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.prod.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +73,7 @@
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -93,6 +87,7 @@
       <recent name="$PROJECT_DIR$/src/client/views" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -136,11 +131,14 @@
       <workItem from="1622397949204" duration="16801000" />
       <workItem from="1622548237040" duration="57000" />
       <workItem from="1622549677452" duration="2795000" />
+      <workItem from="1627572681954" duration="4970000" />
+      <workItem from="1627632803594" duration="14009000" />
+      <workItem from="1627720468827" duration="9452000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -153,29 +151,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1031" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1620305993716">
-      <screen x="0" y="23" width="1920" height="986" />
-    </state>
-    <state x="1031" y="270" key="#com.intellij.fileTypes.FileTypeChooser/-1440.23.1440.877/0.23.1920.986@0.23.1920.986" timestamp="1620305993716" />
-    <state x="729" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1621871655233">
-      <screen x="0" y="23" width="1920" height="986" />
-    </state>
-    <state x="729" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.23.1440.877/0.23.1920.986@0.23.1920.986" timestamp="1621871655233" />
-    <state x="1184" y="484" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.23.1440.877/0.23.1920.988@0.23.1920.988" timestamp="1620382569378" />
-    <state x="1184" y="487" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.23.1440.877/0.23.1920.994@0.23.1920.994" timestamp="1620400128224" />
-    <state x="496" y="160" key="SettingsEditor" timestamp="1620306971773">
-      <screen x="0" y="23" width="1920" height="986" />
-    </state>
-    <state x="496" y="160" key="SettingsEditor/-1440.23.1440.877/0.23.1920.986@0.23.1920.986" timestamp="1620306971773" />
-    <state x="797" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620307022276">
-      <screen x="0" y="23" width="1920" height="986" />
-    </state>
-    <state x="797" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1440.23.1440.877/0.23.1920.986@0.23.1920.986" timestamp="1620307022276" />
-    <state x="885" y="332" width="670" height="676" key="search.everywhere.popup" timestamp="1620416093717">
-      <screen x="0" y="23" width="1920" height="992" />
-    </state>
-    <state x="885" y="332" width="670" height="676" key="search.everywhere.popup/-1440.23.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1620416093717" />
   </component>
 </project>

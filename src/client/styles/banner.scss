@@ -19,62 +19,70 @@ input, select {
 /* Banner */
 /* ------------------------- */
 
-#bg_banner {
-  height: 620px;
-  width: 100vw;
-  position: relative;
-  display: flex;
-  float: left;
-  overflow: hidden;
-  top: 120px;
-}
-
-@media screen and (min-width: 768px) {
-  #bg_image {
-    width: 100vw;
-    height: auto;
-  }
-}
-
-#bg_image {
-  height: 620px;
-}
-
-
 #banner_wrapper {
   grid-area: banner;
   z-index: 1;
-  width: 100vw;
-  height: 100%;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  border: 2px solid red;
+}
+
+
+#banner_wrapper.result {
+  height: 820px;
+}
+
+@media screen and (min-width: 768px) {
+  #banner_wrapper {
+    height: 660px;
+  }
+
+  #banner_wrapper.result {
+    height: 1020px;
+  }
+
 }
 
 /* grid-areas banner */
-
 #banner {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 330px 200px;
-  grid-template-areas: "txt" "form" "space";
+  grid-template-rows: 160px 230px 1fr;
+  grid-template-areas:
+          "txt"
+          "form"
+          "space";
   border: 2px solid yellow;
-}
-
-@media screen and (max-width: 767px) {
-  #banner {
-    grid-template-rows: 260px 1fr 1fr;
-  }
+  height: 100%;
 }
 
 #banner.result {
-  grid-template-rows: 1fr 641px 1fr;
+  grid-template-rows: 1fr 540px 1fr;
 }
 
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 700px) {
+  #banner {
+    grid-template-rows: 1fr 230px 1fr;
+  }
   #banner.result {
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "txt" "form";
+    margin: 30px;
   }
 }
+
+@media screen and (min-width: 767px) {
+  #banner.result {
+    grid-template-rows: 1fr 640px 1fr;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #banner.result {
+    grid-template-rows: 1fr 480px 1fr;
+    margin: 0
+  }
+}
+
 
 .text-banner {
   grid-area: txt;
@@ -90,26 +98,32 @@ input, select {
   }
 }
 
-.space {
+.space-wrapper {
   grid-area: space;
+  position: relative;
+}
+
+.space {
   background: linear-gradient(180deg, rgba(248, 247, 251, 0) 0%, white 100%);
-  height: 200px;
-  margin-top: -167px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .form-banner {
   grid-area: form;
-  margin: auto;
+  margin: 0px auto 40px;;
   background: white;
   padding: 40px;
   opacity: 0.8;
-  height: 250px;
+  height: 100%;
+  padding: 10px 10px 10px 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 700px) {
   .form-banner {
-    padding: 10px 10px 10px 0;
-    height: 100%;
+
   }
 }
 
@@ -131,7 +145,7 @@ input, select {
 
 .form.result {
   width: 600px;
-  height: 360px;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 40px 40px 40px 40px 1fr 1fr 1fr;
@@ -214,19 +228,19 @@ input, select {
 }
 
 .label-left {
-  position: absolute;
-  top: 5px;
-  left: 30px;
-}
-
-.input-left {
-  display: none;
+  display: block;
+  margin: 10px 15px;
 }
 
 .input-left.open {
   display: block;
   height: 60px;
 }
+
+.input-packlist {
+  height: 20px;
+}
+
 
 /* layout buttons */
 
@@ -246,44 +260,27 @@ input, select {
   color: white;
 }
 
-.arrow-down-close {
-  width: 30px;
-  height: 30px;
-  display: block;
-  position: relative;
-  top: 10px;
-  left: 10px;
-
-  &:before, &:after {
-    content: '';
-    display: inline-block;
-    height: 10px;
-    width: 2px;
-    background-color: black;
-    border-radius: 10px;
-    position: relative;
-    transition: 300ms ease-in-out transform;
-  }
-
-  &:before {
-    transform: rotate(-45deg);
-    left: 0px;
-    top: -4px;
-  }
-
-  &:after {
-    transform: rotate(45deg);
-    left: 4.5px;
-    top: -4px;
-  }
-
-  &.open {
-    &:before {
-      transform: translateX(-3px) rotate(-45deg);
-    }
-
-    &:after {
-      transform: translateX(-10px) rotate(45deg);
-    }
-  }
+.btn button:hover {
+  color: black;
 }
+
+.delete-item {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  color: red;
+}
+
+.add-item {
+  width: 15%;
+  background-color: green;
+  border-radius: 5px 5px;
+  box-shadow: 1px 1px 10px 1px green;
+  border-color: lightgreen;
+  color: white;
+}
+
+.add-item:hover {
+  color: black;
+}
+

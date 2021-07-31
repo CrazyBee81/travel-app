@@ -19,10 +19,7 @@
             <li class="list-items"><a class="category_link" href="impressum.html">Impressum</a></li>
         </ul>
     </header>
-    <div id="bg_banner">
-        <img id="bg_image" src="./src/client/media/panorama.jpg" alt="background">
-    </div>
-    <div id="banner_wrapper">
+    <div id="banner_wrapper" style="background-image: url('./src/client/media/panorama.jpg');">
         <div id="banner">
             <div class="text-banner">
                 <h1>TravelBee<br>
@@ -35,15 +32,16 @@
                         <img src="" alt="" width="360" height="240">
                     </div>
                     <div class="form_element notes inactive">
-                        <a class="notes arrow-down-close" onclick="Client.openDropdown(this)"></a>
                         <label class="label-left">Notes</label>
                         <input class="input-left" type="text" placeholder="I´ve got to pack my bag">
                     </div>
                     <div class="form_element packlist inactive">
-                        <a class="packlist arrow-down-close" onclick="Client.openDropdown(this)"></a>
-                        <label class="label-left">Packlist</label>
-                        <input class="input-left" type="text"
-                               placeholder="<p>a) asdlaskd <br>b) asdlaskd c) asdlaskd</p>">
+                        <div>
+                            <label class="label-left">Packlist</label></div>
+                            <input class="input-left input-packlist" type="text" placeholder="insert list items">
+                            <button class="add-item" type="submit" onclick="return Client.createListItem(event)">Add</button>
+                        <ul class="packlist" style="padding-left: 15px;">
+                        </ul>
                     </div>
                     <div class="form_element city">
                         <label>City</label>
@@ -347,9 +345,10 @@
                     </div>
                 </form>
             </div>
-            <div class="space">
+            <div class="space-wrapper">
+                <div class="space">
+                </div>
             </div>
-
         </div>
     </div>
     <main>

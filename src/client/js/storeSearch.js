@@ -15,7 +15,10 @@ const storeSearchResults = async (searchResult) => {
 
 const loadSearchResults = async () => {
     const data = JSON.parse(localStorage.getItem('searchResults'));
-    return data[0]
+    if (data[0] !== undefined) {
+        top.searchObj = data[0]
+        showSearchResults(data[0])
+    }
 }
 
 document.addEventListener("DOMContentLoaded", loadSearchResults);

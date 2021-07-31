@@ -6,16 +6,13 @@
 .cards {
   height: 100%;
   width: 100%;
-  margin: 40px;
-  display: block;
   flex-wrap: wrap;
   justify-content: space-around;
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .cards {
-    display:block;
     margin: 5px;
   }
 }

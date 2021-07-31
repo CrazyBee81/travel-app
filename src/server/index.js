@@ -38,6 +38,7 @@ function addData(req, res) {
     let newPost = req.body
     projectData[Object.keys(projectData).length] = newPost
     res.send(projectData[Object.keys(projectData).length - 1])
+    console.log(newPost)
 }
 
 // GET route

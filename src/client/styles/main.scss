@@ -64,51 +64,49 @@ a:hover {
   /* Step 1: Set display to grid */
   display: grid;
   /* Step 2: setup rows amd columns */
-  grid-template-columns: 492px;
-  grid-template-rows: 120px 680px 1fr 200px;
+  grid-template-columns: 100vw;
+  grid-template-rows: 120px 60vh 1fr 200px;
   grid-template-areas: "hd" "banner" "content" "ft";
   border: 2px solid white;
 }
 
+.page_wrapper.result {
+  grid-template-rows: 120px 860px 1fr 200px;
+}
+
+@media screen and (min-width: 700px) {
+  .page_wrapper {
+    grid-template-rows: 120px 500px 1fr 200px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .page_wrapper {
-    /* Step 1: Set display to grid */
-    display: grid;
-    /* Step 2: setup rows amd columns */
-    grid-template-columns: 1fr;
-    grid-template-rows: 120px 1fr 1fr 200px;
-    grid-template-areas: "hd" "banner" "content" "ft";
-    border: 2px solid white;
+    grid-template-rows: 120px 660px 1fr 200px;
+  }
+  .page_wrapper.result {
+    grid-template-rows: 120px 1020px 1fr 200px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .page_wrapper {
-    /* Step 1: Set display to grid */
-    display: grid;
-    /* Step 2: setup rows amd columns */
-    grid-template-columns: 1fr;
     grid-template-rows: 120px 760px 1fr 200px;
-    grid-template-areas: "hd" "banner" "content" "ft";
-    border: 2px solid white;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .page_wrapper {
-    /* Step 1: Set display to grid */
-    display: grid;
-    /* Step 2: setup rows amd columns */
-    grid-template-columns: 320px 320px 320px 320px 320px 320px;
-    grid-template-rows: 120px 120px 1fr 200px;
-    grid-template-areas: "hd" "content" "ft";
-    border: 2px solid white;
+    grid-template-rows: 120px 600px 1fr 200px;
+  }
+  .page_wrapper.result {
+    grid-template-rows: 120px 1020px 1fr 200px;
   }
 }
 
 header {
   grid-area: hd;
-  width: 100vw;
+  width: 100%;
   display: flex;
 }
 

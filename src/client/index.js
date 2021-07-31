@@ -8,9 +8,10 @@ import {selectImage} from "./js/updateSearch"
 import {loadSearchResults} from "./js/storeSearch"
 import {storeSearchResults} from "./js/storeSearch"
 import {postData} from "./js/requestAPI"
-import {getCardData} from "./js/updateCards"
-import {createCards} from "./js/updateCards"
+import {updateCards} from "./js/updateCards"
 import {getAPIData} from "./js/requestAPI"
+import {createListItem} from "./js/createPacklist"
+
 
 import './styles/banner.scss'
 import './styles/cards.scss'
@@ -22,5 +23,5 @@ export {
     performSearch,
     getAPIData,
     postData,
-    showSearchResults, openDropdown, clearSearchResults, selectImage, safeSearch, getCardData, createCards, calculateCountdown, storeSearchResults, loadSearchResults
+    showSearchResults, createListItem, openDropdown, clearSearchResults, selectImage, safeSearch, updateCards, calculateCountdown, storeSearchResults, loadSearchResults
 }

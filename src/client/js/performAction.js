@@ -4,6 +4,7 @@ import {clearSearchResults} from "./updateSearch"
 import {storeSearchResults} from "./storeSearch"
 import {getAPIData} from "./requestAPI"
 import {postData} from "./requestAPI"
+import {updateCards} from "./updateCards"
 
 /* Global Variables */
 document.getElementById('generate').addEventListener('click', performSearch);
@@ -11,18 +12,26 @@ document.getElementById('generate').addEventListener('click', performSearch);
 let postID
 let searchObj = {}
 
+updateCards()
+
 function safeSearch(event) {
     try {
         event.preventDefault();
     } catch (event) {
     }
-    console.log('ping')
+    searchObj = top.searchObj
     if(searchObj.imgData !== undefined && searchObj.weatherData !== undefined ) {
         searchObj.category = document.querySelector('.category select').value
         searchObj.notes = document.querySelector('.notes input').value
-        searchObj.packlist = document.querySelector('.packlist input').value
+        searchObj.packlist = []
+        for (let i=1; i<=document.querySelector('ul.packlist').childElementCount; i++) {
+            let itemTxt = document.querySelector(`li#item_${i}`).innerText
+            itemTxt = itemTxt.substr(0,itemTxt.length-2)
+            searchObj.packlist.push(itemTxt)
+        }
         postData("http://localhost:8081/add", searchObj)
         clearSearchResults()
+        updateCards()
     } else{
         alert('could not fetch api data!')
     }
@@ -86,6 +95,7 @@ function performSearch(event) {
                                     searchObj.imgData = newData.imgData
                                     console.log(newData)
                                 }).then(() => {
+                                    top.searchObj = searchObj
                                     showSearchResults(searchObj)
                                     storeSearchResults(searchObj)
                                 })

@@ -11,7 +11,7 @@ const buildRequestURL = (requestParams = {}) => {
                 requestURL = `https://pixabay.com/api/?q=${requestParams.city}&category=places&orientation=horizontal&image_type=photo&key=`
                 break;
             case 'geonames':
-                requestURL = `http://api.geonames.org/searchJSON?name=${requestParams.city}&country=${requestParams.countryCode}&featureCode=ppl&username=`
+                requestURL = `http://api.geonames.org/searchJSON?q=${requestParams.city}&country=${requestParams.countryCode}&featureCode=ppl&username=`
 
                 break;
             default:

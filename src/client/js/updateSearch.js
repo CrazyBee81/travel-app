@@ -3,7 +3,10 @@ const showSearchResults = async (searchResult) => {
     if (searchResult !== undefined) {
         let iconId = searchResult.weatherData.icon
         let formatURL = searchResult.imgData.formatURL
-        let remainingDays = calculateCountdown(document.querySelector('form .date input').value)
+        let remainingDays = calculateCountdown(searchResult.date)
+        document.querySelector('form .city input').value = searchResult.city
+        document.querySelector('form .country select').value = searchResult.countryCode
+        document.querySelector('form .date input').value = searchResult.date
         document.querySelector('form .weather .destination').innerHTML = `Current weather in ${searchResult.city}:`
         document.querySelector('form .weather .weather_icon').src = `./src/client/media/icons/${iconId}.png`
         document.querySelector('form .weather .description').innerHTML = searchResult.weatherData.description
@@ -11,8 +14,10 @@ const showSearchResults = async (searchResult) => {
         document.querySelector('form .countdown p').innerHTML = `Your Trip to ${searchResult.city} is ${remainingDays} days away`
         document.querySelector('form').classList.add('result')
         document.querySelector('#banner').classList.add('result')
-
+        document.querySelector('#app').classList.add('result')
+        document.querySelector('#banner_wrapper').classList.add('result')
         toggleForm()
+        return searchResult
     } else {
         toggleForm()
     }
@@ -42,6 +47,9 @@ function clearSearchResults(event) {
     toggleForm()
     document.querySelector('form').classList.remove('result')
     document.querySelector('#banner').classList.remove('result')
+    document.querySelector('#app').classList.remove('result')
+    document.querySelector('#banner_wrapper').classList.remove('result')
+
     localStorage.clear();
 }
 
