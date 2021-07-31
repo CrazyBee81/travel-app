@@ -20,13 +20,33 @@ function updateCards() {
 
     const createCards = (projectData) => {
         const cardsContainer = document.querySelector('.cards')
-        const htmlString = "<div class=\"property-card\"><div class=\"property-image\"><div class=\"property-image-title\"> <img src=\"\" alt=\"\" width=\"360\" height=\"240\"></div></div><div class=\"property-description\"><h5 class=\"titel\"></h5><div class=\"left\"><div class=\"location\"></div><div class=\"date\"></div><div class=\"countdown\"></div><div class=\"weather\"><p class=\"forecast\"></p> <img class=\"icon\" src=\"\" alt=\"icon\" width=\"90\" height=\"90\"><p class=\"description\"></p></div><div class=\"notes\"></div><div class=\"packlist\"></div></div></div></div>"
-
+        const tripsSection =document.querySelector('#my_trips')
+        const htmlString = "<div class=\"property-card\"><div class=\"property-image\"><div class=\"property-image-title\"> <img src=\"\" alt=\"\" width=\"360\" height=\"240\"></div></div><div class=\"property-description\"><h5 class=\"titel\"></h5><div class=\"left\"><div class=\"cards-category flex-container\"></div><div class=\"location\"></div><div class=\"date\"></div><div class=\"countdown\"></div><div class=\"weather\"><p class=\"forecast\"></p> <img class=\"icon\" src=\"\" alt=\"icon\" width=\"90\" height=\"90\"><p class=\"description\"></p></div><div class=\"notes\"></div><div class=\"packlist\"></div></div></div></div>"
+        if (projectData.length === 0) {
+            cardsContainer.classList.add('inactive')
+            tripsSection.classList.add('inactive')
+        }
         const createCard = (data, ind) => {
             let box = document.createElement('div')
             box.classList.add('card-box')
             box.id = `box-${ind}`
             box.innerHTML = htmlString
+            switch(data.category) {
+                case 'Sightseeing':
+                    box.querySelector('.cards-category').innerHTML = '<i class=\"category-icon fas fa-archway\"></i><p class=\"category-description\">Sightseeing</p>'
+                    break;
+                case 'Hiking':
+                    box.querySelector('.cards-category').innerHTML = '<i class=\"category-icon fas fa-hiking\"></i><p class=\"category-description\">Hiking</p>'
+                    break;
+                case 'Biking':
+                    box.querySelector('.cards-category').innerHTML = '<i class=\"category-icon fas fa-biking\"></i><p class=\"category-description\">Biking</p>'
+                    break;
+                case 'Beach':
+                    box.querySelector('.cards-category').innerHTML = '<i class=\"category-icon fas fa-umbrella-beach\"></i><p class=\"category-description\">Beach</p>'
+                    break;
+                default:
+                    box.querySelector('.cards-category').innerHTML = '<i class=\"category-icon fas fa-suitcase\"></i><p class=\"category-description\">Traveling</p>'
+            }
             box.querySelector('.property-image-title img').src = data.imgData.formatURL
             box.querySelector('.location').innerHTML = `<p><strong>My trip to: ${data.city},${data.countryCode}</strong></p>`
             box.querySelector('.date').innerHTML = `<p><strong>Departing: ${data.date}</strong></p>`
@@ -58,10 +78,8 @@ function updateCards() {
                     })
                 }
             )
-
         }
     }
-
 
     getCardData().then((response) => createCards(response))
 }

@@ -12,7 +12,7 @@ import {updateCards} from "./js/updateCards"
 import {getAPIData} from "./js/requestAPI"
 import {createListItem} from "./js/createPacklist"
 
-
+import './styles/about-impressum.scss'
 import './styles/banner.scss'
 import './styles/cards.scss'
 import './styles/footer.scss'

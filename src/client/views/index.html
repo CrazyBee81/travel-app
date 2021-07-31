@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
 <div id="app" class="page_wrapper">
@@ -14,9 +15,9 @@
             <h2>Travel Bee</h2>
         </div>
         <ul class="navi-list">
-            <li class="list-items"><a class="category_link" href="index_old.html">Homepage</a></li>
-            <li class="list-items"><a class="category_link" href="about.html">About</a></li>
-            <li class="list-items"><a class="category_link" href="impressum.html">Impressum</a></li>
+            <li class="list-items"><a class="category_link" href="#top">Search</a></li>
+            <li class="list-items"><a class="category_link" href="#about">About</a></li>
+            <li class="list-items"><a class="category_link" href="#impressum">Impressum</a></li>
         </ul>
     </header>
     <div id="banner_wrapper" style="background-image: url('./src/client/media/panorama.jpg');">
@@ -38,8 +39,9 @@
                     <div class="form_element packlist inactive">
                         <div>
                             <label class="label-left">Packlist</label></div>
-                            <input class="input-left input-packlist" type="text" placeholder="insert list items">
-                            <button class="add-item" type="submit" onclick="return Client.createListItem(event)">Add</button>
+                        <input class="input-left input-packlist" type="text" placeholder="insert list items">
+                        <button class="add-item" type="submit" onclick="return Client.createListItem(event)">Add
+                        </button>
                         <ul class="packlist" style="padding-left: 15px;">
                         </ul>
                     </div>
@@ -317,9 +319,9 @@
                     <div class="form_element category">
                         <label>Type</label>
                         <select>
-                            <option>City Trips</option>
-                            <option>Mountain Tour</option>
-                            <option>Bus Tour</option>
+                            <option>Sightseeing</option>
+                            <option>Hiking</option>
+                            <option>Biking</option>
                             <option>Beach</option>
                         </select>
                     </div>
@@ -362,10 +364,172 @@
             <div class="cards">
             </div>
         </section>
+        <section id="about" class="description">
+            <div class="flex-container">
+                <div class="titlepage">
+                    <h3>About</h3>
+                    <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at it's layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>
+                </div>
+            </div>
+            <div id="profile">
+                <h3>The Author</h3>
+                <div id="profile-img" style="background-image: url('../src/client/media/avatar.jpg');"></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Donec quam
+                felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
+                pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+                vitae,
+                justo.
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+                semper nisi.
+                Aenean
+                vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                Aliquam lorem
+                ante,
+                dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+                Quisque rutrum.
+                Aenean
+                imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                rhoncus.
+                Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem
+                neque sed
+                ipsum.
+                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                tincidunt tempus.
+                Donec
+                vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus
+                tincidunt.
+                Duis
+                leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
+                bibendum
+                sodales,
+                augue velit cursus nunc
+                imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                rhoncus.
+                Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem
+                neque sed
+                ipsum.
+                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                tincidunt tempus.
+                Donec
+                vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus
+                tincidunt.
+                Duis
+                leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
+                bibendum
+                sodales,
+                augue velit cursus nunc
+                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                tincidunt tempus.
+                Donec
+                vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus
+                tincidunt.
+                Duis
+                leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
+                bibendum
+                sodales,
+                augue velit cursus nunc
+                imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                rhoncus.
+                Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem
+                neque sed
+                ipsum.
+                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                tincidunt tempus.
+                Donec
+                vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus
+                tincidunt.
+                Duis
+                leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
+                bibendum
+                sodales,
+                augue velit cursus nunc</p>
+        </section>
+        <section id="impressum" class="description">
+            <div class="flex-container">
+                <div class="titlepage">
+                    <h3>Impressum</h3>
+                    <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at it's layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Donec quam
+                felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
+                pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+                vitae,
+                justo.
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+                semper nisi.
+                Aenean
+                vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                Aliquam lorem
+                ante,
+                dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+                Quisque rutrum.
+                Aenean
+                imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                rhoncus.
+                Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem
+                neque sed
+                ipsum.
+                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                tincidunt tempus.
+                Donec
+                vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus
+                tincidunt.
+                Duis
+                leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
+                bibendum
+                sodales,
+                augue velit cursus nunc
+                imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                rhoncus.
+                Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem
+                neque sed
+                ipsum.
+                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                tincidunt tempus.
+                Donec
+                vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus
+                tincidunt.
+                Duis
+                leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
+                bibendum
+                sodales,
+                augue velit cursus nunc
+                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                tincidunt tempus.
+                Donec
+                vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus
+                tincidunt.
+                Duis
+                leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
+                bibendum
+                sodales,
+                augue velit cursus nunc
+                imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                rhoncus.
+                Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem
+                neque sed
+                ipsum.
+                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                tincidunt tempus.
+                Donec
+                vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus
+                tincidunt.
+                Duis
+                leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
+                bibendum
+                sodales,
+                augue velit cursus nunc</p>
+        </section>
     </main>
-
 </div>
-
 <footer class="footer box">
     <div class="flex-container">
         <div class="share-items">
@@ -383,12 +547,12 @@
     </div>
     <ul class="flex-container">
         <li class="navi-list footer-items">
-            <a href="mailto:mail@rbeny.de">
+            <a target="" href="mailto:mail@rbeny.de">
                 Kontakt
             </a>
         </li>
         <li class="navi-list footer-items">
-            <a href="impressum.html">
+            <a target="" href="#impressum">
                 Impressum
             </a>
         </li>

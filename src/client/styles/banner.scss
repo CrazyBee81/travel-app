@@ -192,6 +192,12 @@ input, select {
   position: relative;
 }
 
+.form_element.notes input {
+  width: 90%;
+  height: 75%;
+}
+
+
 .form_element.countdown {
   grid-area: countdown;
 }
@@ -200,6 +206,7 @@ input, select {
   grid-area: packlist;
   margin-left: 10px;
   position: relative;
+  overflow: auto;
 }
 
 .form_element.weather {
@@ -235,6 +242,10 @@ input, select {
 .input-left.open {
   display: block;
   height: 60px;
+}
+
+ul.packlist {
+  padding-left: 15px;
 }
 
 .input-packlist {
