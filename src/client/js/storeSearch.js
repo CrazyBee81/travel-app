@@ -15,7 +15,7 @@ const storeSearchResults = async (searchResult) => {
 
 const loadSearchResults = async () => {
     const data = JSON.parse(localStorage.getItem('searchResults'));
-    if (data[0] !== undefined) {
+    if (data !== null) {
         top.searchObj = data[0]
         showSearchResults(data[0])
     }

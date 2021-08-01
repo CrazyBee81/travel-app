@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2495c9c9-430a-4105-a04f-d95dcc50dc8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/client/styles/about-impressum.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/js/storeSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/storeSearch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/js/updateCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/js/updateCards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/styles/banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/banner.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/styles/cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/cards.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/styles/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/views/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/client/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -125,7 +120,8 @@
       <workItem from="1627572681954" duration="4970000" />
       <workItem from="1627632803594" duration="14009000" />
       <workItem from="1627720468827" duration="9758000" />
-      <workItem from="1627751159753" duration="6371000" />
+      <workItem from="1627751159753" duration="6630000" />
+      <workItem from="1627811664558" duration="659000" />
     </task>
     <servers />
   </component>
